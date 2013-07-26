@@ -1,0 +1,2 @@
+module NcaaMensBbHeadlinesHelper
+end

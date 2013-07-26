@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  headline: MyString
+  description: MyText
+  last_modified: 2013-05-25 01:16:44
+  espn_id: 1
+  href: MyText
+  image_url: MyText
+  image_caption: MyText
+
+two:
+  headline: MyString
+  description: MyText
+  last_modified: 2013-05-25 01:16:44
+  espn_id: 1
+  href: MyText
+  image_url: MyText
+  image_caption: MyText

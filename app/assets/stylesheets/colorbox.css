@@ -1,0 +1,9 @@
+#cboxOverlay{background:none;}
+#cboxCurrent{color:red;display:none!important;}
+#cboxNext{border:none;}
+#cboxPrevious {border:none;}
+#cboxClose {border:none;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#colorbox{outline:0;}
+
+#cboxSlideshow {display:block;}

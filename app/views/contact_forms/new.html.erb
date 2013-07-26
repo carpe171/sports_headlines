@@ -1,0 +1,34 @@
+<% provide(:title, 'Contact') %>
+	<div class="row">
+		<div class="large-6 large-centered columns">
+			<div class="contact-section">
+				<div class="container">
+					<h5>Contact</h5>
+					<p>Feel free to leave me a message below:</p>
+					<div class="contact-content">
+						<div id="contact-form-2">
+							<%= form_for(@contact_form) do |f| %>
+								<%# render 'shared/error_messages' %>
+
+								<div class="field">
+									<%= f.label :name %>
+									<%= f.text_field :name %>
+
+									<%= f.label :email %>
+									<%= f.text_field :email %>
+
+									<%= f.label :message %>
+									<%= f.text_area :message, :id => "text-box-2" %>
+
+									<% f.hidden_field :nickname %>
+								</div>
+
+								<%= f.submit "Send message", class: "button secondary" %>
+
+							<% end %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

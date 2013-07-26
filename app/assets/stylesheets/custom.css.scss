@@ -1,0 +1,95 @@
+h5 {
+	text-align: center;
+}
+
+.check-box-text {
+	font-size: 0.8em;
+}
+
+// div.orbit-caption {
+// 	display: block;
+// 	a {
+// 		text-decoration: none;	
+// 		color: white;
+// 	}
+// }
+
+
+.transparent {
+	opacity: 0;
+}
+
+.th-item{
+    height: 9em;
+    width: 210px;
+    margin: 10px 5px;
+    overflow: hidden;
+    background-position: left;
+    // background-size: 100% auto;
+    // background-repeat: no-repeat;
+    img {
+    	overflow: hidden;
+    }
+}
+
+.pre-lightbox-caption {
+	display: none;
+}
+
+div.clearing-assembled.clearing-blackout { }
+
+div.clearing-container {}
+
+p.clearing-caption {
+	background-color: #eee;
+	padding: 10px;
+	border-radius: 5px;
+	a {
+		color: #000094;
+		&:hover {
+			color: #2ba6cb;
+		}
+	}
+}
+
+
+
+ul.clearing-thumbs {
+	li {
+		a.th.th-item {
+			text-align: center;
+			img {
+				height: 140px;
+				position: relative;
+				text-align: center;
+			}
+		}
+	}
+}
+
+
+.sub-nav {
+	position: relative;
+	text-align: center;
+	dd {
+		text-align: center;
+		float: none;
+	}
+	dd a {
+		padding-left: 10px;
+		text-align: center;
+	}
+}
+
+#turn-toggle-thumb {
+	position: fixed;
+	background-color: #2ba6cb;
+	color: white;
+	padding: 10px;
+	z-index:2;
+}
+
+
+footer {
+	margin-top: 80px;
+}

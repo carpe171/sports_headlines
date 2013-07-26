@@ -1,0 +1,2 @@
+module NbaHeadlinesHelper
+end

@@ -1,0 +1,17 @@
+<h5>ESPN NFL Headlines</h5>
+<div class="row">
+	<div class="large-12 columns">
+		<h6 class="show-headline-headline"><%= @nfl_headline.headline %></h6>
+		<p class="show-headline-time"><%= @nfl_headline.last_modified.localtime.strftime('%l:%M %p %Z %-m-%d-%Y') %></p>
+		<p class="show-headline-description"><%= @nfl_headline.description %></p>
+		<p><%= link_to 'Full Story', @nfl_headline.href %></p>
+		<% if @nfl_headline.image_url.map.any? %>
+			<% @nfl_headline.image_url.map do |image| %>
+		<%= image_tag image %>
+		<% end %>
+		<% else %>
+			<p class="show-headline-image"><%= image_tag('espn_logo_frozen.png') %></p>
+		<% end %>
+		<p><%= link_to "Back", nfl_headlines_path %></p>
+	</div>
+</div>

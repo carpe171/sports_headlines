@@ -1,0 +1,19 @@
+<h5>ESPN NFL Headlines</h5>
+
+	<ul class="clearing-thumbs" data-clearing>
+	<% @nfl_headlines.map do |headline| %>
+	
+	<% if headline.image_url.map.any? %>
+	<li><a class="ttt th th-item"><%= image_tag headline.image_url.first, data: { caption: "<a href=#{nfl_headline_path(headline)}>#{headline.description}</a>" } %></a></li>
+
+	<% else %>
+		<li><a class="ttt th th-item"><%= image_tag('espn_logo_frozen.png', data: { caption: "<a href=#{nfl_headline_path(headline)}>#{headline.description}</a>" }) %></a></li>
+	<% end %>
+	<% end %>
+</ul>
+
+<div class="row">
+	<div class="large-12 large-centered columns">
+		<%= will_paginate @nfl_headlines %>
+	</div>
+</div>
