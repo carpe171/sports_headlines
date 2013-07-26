@@ -4,7 +4,7 @@
 		<h6 class="show-headline-headline"><%= @headline.headline %></h6>
 		<p class="show-headline-time"><%= @headline.last_modified.localtime.strftime('%l:%M %p %Z %-m-%d-%Y') %></p>
 		<p class="show-headline-description"><%= @headline.description %></p>
-		<p><%= link_to 'Full Story', @headline.href %></p>
+		<p><%= link_to 'Full Story', @headline.href, target: "_blank" %></p>
 		<% if @headline.image_url.map.any? %>
 			<% @headline.image_url.map do |image| %>
 		<%= image_tag image %>

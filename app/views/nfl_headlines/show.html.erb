@@ -4,7 +4,7 @@
 		<h6 class="show-headline-headline"><%= @nfl_headline.headline %></h6>
 		<p class="show-headline-time"><%= @nfl_headline.last_modified.localtime.strftime('%l:%M %p %Z %-m-%d-%Y') %></p>
 		<p class="show-headline-description"><%= @nfl_headline.description %></p>
-		<p><%= link_to 'Full Story', @nfl_headline.href %></p>
+		<p><%= link_to 'Full Story', @nfl_headline.href, target: "_blank" %></p>
 		<% if @nfl_headline.image_url.map.any? %>
 			<% @nfl_headline.image_url.map do |image| %>
 		<%= image_tag image %>

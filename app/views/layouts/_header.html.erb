@@ -1,5 +1,5 @@
 <header>
-	<% unless request.fullpath.include?('contact') || request.fullpath.include?('about') %>
+	<% unless request.fullpath.include?('contact') || request.fullpath.include?('about') || params[:action] == 'show' %>
 		<div id="turn-toggle-thumb">Toggle Thumbs</div>
 	<% end %>
 	<div class="row">

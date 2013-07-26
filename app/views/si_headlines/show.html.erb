@@ -4,7 +4,7 @@
 		<h6 class="show-headline-headline"><%= @si_headline.headline %></h6>
 		<p class="show-headline-time"><%= @si_headline.last_modified.localtime.strftime('%l:%M %p %Z %-m-%d-%Y') %></p>
 		<p class="show-headline-description"><%= @si_headline.description %></p>
-		<p><%= link_to 'Full Story', @si_headline.href %></p>
+		<p><%= link_to 'Full Story', @si_headline.href, target: "_blank" %></p>
 		<%= image_tag @si_headline.image_url %>
 		<p><%= link_to "Back", si_headlines_path %></p>
 	</div>

@@ -19,12 +19,10 @@ class Headline < ActiveRecord::Base
 			unless exists? :espn_id => headline[:id]
 				create!(
 					:espn_id 				=> headline[:id],
-					:headline 			=> headline[:shortLinkText],
+					:headline 			=> headline[:headline],
 					:description		=> headline[:description],
 					:last_modified 	=> headline[:lastModified],
 					:href						=> headline[:links][:web][:href],
-					:sport_id 			=>  headline[:categories].first['sportId'],
-					:team_id				=>	headline[:categories].first['teamId'],
 					:image_url => headline[:images].map { |m| m['url'] } 
 					)
 			end
@@ -36,3 +34,5 @@ end
 
 
 #http://api.espn.com/v1/sports/news/headlines/top?apikey=2tpfdnkmhnvnxkcr59nw8gmj
+					# :sport_id 			=>  headline[:categories].first['sportId'],
+					# :team_id				=>	headline[:categories].first['teamId'],

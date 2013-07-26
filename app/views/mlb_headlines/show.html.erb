@@ -4,7 +4,7 @@
 		<h6 class="show-headline-headline"><%= @mlb_headline.headline %></h6>
 		<p class="show-headline-time"><%= @mlb_headline.last_modified.localtime.strftime('%l:%M %p %Z %-m-%d-%Y') %></p>
 		<p class="show-headline-description"><%= @mlb_headline.description %></p>
-		<p><%= link_to 'Full Story', @mlb_headline.href %></p>
+		<p><%= link_to 'Full Story', @mlb_headline.href, target: "_blank" %></p>
 		<% if @mlb_headline.image_url.map.any? %>
 			<% @mlb_headline.image_url.map do |image| %>
 		<%= image_tag image %>

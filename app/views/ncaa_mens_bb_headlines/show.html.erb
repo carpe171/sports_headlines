@@ -4,7 +4,7 @@
 		<h6 class="show-headline-headline"><%= @ncaa_mens_bb_headline.headline %></h6>
 		<p class="show-headline-time"><%= @ncaa_mens_bb_headline.last_modified.localtime.strftime('%l:%M %p %Z %-m-%d-%Y') %></p>
 		<p class="show-headline-description"><%= @ncaa_mens_bb_headline.description %></p>
-		<p><%= link_to 'Full Story', @ncaa_mens_bb_headline.href %></p>
+		<p><%= link_to 'Full Story', @ncaa_mens_bb_headline.href, target: "_blank" %></p>
 		<% if @ncaa_mens_bb_headline.image_url.map.any? %>
 			<% @ncaa_mens_bb_headline.image_url.map do |image| %>
 		<%= image_tag image %>
