@@ -2,8 +2,6 @@
 	require 'nokogiri'
 	require 'open-uri'
 
-  default_scope order: 'si_headlines.last_modified DESC'
-
   def self.update_from_feed
     url = 'http://rss.cnn.com/rss/si_topstories.rss'
 		doc = Nokogiri::XML(open(url))

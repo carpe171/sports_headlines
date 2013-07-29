@@ -2,7 +2,7 @@ class NhlHeadlinesController < ApplicationController
   before_action :set_nhl_headline, only: [:show]
 
 	def index
-		@nhl_headlines = NhlHeadline.all.page(params[:page]).per_page(60)
+		@nhl_headlines = NhlHeadline.all.order('last_modified desc').page(params[:page]).per_page(60)
 	end
 
 	def show

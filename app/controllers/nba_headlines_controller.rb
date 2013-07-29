@@ -3,7 +3,7 @@ class NbaHeadlinesController < ApplicationController
   before_action :set_nba_headline, only: [:show]
 
 	def index
-		@nba_headlines = NbaHeadline.all.page(params[:page]).per_page(60)
+		@nba_headlines = NbaHeadline.all.order('last_modified desc').page(params[:page]).per_page(60)
 	end
 
 	def show

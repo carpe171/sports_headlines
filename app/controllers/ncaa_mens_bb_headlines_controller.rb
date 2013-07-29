@@ -2,7 +2,7 @@ class NcaaMensBbHeadlinesController < ApplicationController
   before_action :set_ncaa_mens_bb_headline, only: [:show]
 
 	def index
-		@ncaa_mens_bb_headlines = NcaaMensBbHeadline.all.page(params[:page]).per_page(60)
+		@ncaa_mens_bb_headlines = NcaaMensBbHeadline.all.order('last_modified desc').page(params[:page]).per_page(60)
 	end
 
 	def show

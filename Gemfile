@@ -56,3 +56,14 @@ gem 'will_paginate', '~> 3.0.0'
 gem 'figaro'
 gem 'mail_form'
 gem 'heroku'
+
+gem "rspec-rails", :group => [:test, :development]
+group :test do
+	gem "database_cleaner"
+  gem "factory_girl_rails"
+  gem "capybara"
+  gem 'launchy'
+  gem 'poltergeist'
+  gem "guard-rspec"
+  gem "email_spec"
+end

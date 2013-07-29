@@ -14,4 +14,6 @@ EspnDb::Application.routes.draw do
   get 'about', to: 'static_pages#about'
   get 'contact', to: 'contact_forms#new', as: 'contact_forms'
   post 'contact', to: 'contact_forms#create'
+
+  get 'announcements/:id/hide', to: 'announcements#hide', as: 'hide_announcement', via: [:get, :post]
 end

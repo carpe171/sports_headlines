@@ -12,4 +12,6 @@
  *= require foundation_and_overrides
  *= require custom.css
  *= require pagination.css
+ *= require announcements
+ *= require si_headlines
  */

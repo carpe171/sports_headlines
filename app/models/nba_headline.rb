@@ -1,5 +1,4 @@
 class NbaHeadline < ActiveRecord::Base
-	default_scope order: 'nba_headlines.last_modified DESC'
 
 	serialize :image_url
 

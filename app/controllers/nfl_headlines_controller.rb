@@ -2,7 +2,7 @@ class NflHeadlinesController < ApplicationController
   before_action :set_nfl_headline, only: [:show]
 
 	def index
-		@nfl_headlines = NflHeadline.all.page(params[:page]).per_page(60)
+		@nfl_headlines = NflHeadline.all.order('last_modified desc').page(params[:page]).per_page(60)
 	end
 
 	def show

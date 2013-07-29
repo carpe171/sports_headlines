@@ -2,7 +2,7 @@ class MlbHeadlinesController < ApplicationController
   before_action :set_mlb_headline, only: [:show]
 
 	def index
-		@mlb_headlines = MlbHeadline.all.page(params[:page]).per_page(60)
+		@mlb_headlines = MlbHeadline.all.order('last_modified desc').page(params[:page]).per_page(60)
 	end
 
 	def show

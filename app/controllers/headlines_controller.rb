@@ -2,7 +2,7 @@ class HeadlinesController < ApplicationController
   before_action :set_headline, only: [:show]
 
 	def index
-		@headlines = Headline.order("last_modified DESC").page(params[:page]).per_page(60)
+		@headlines = Headline.order('last_modified desc').page(params[:page]).per_page(60)
 	end
 
 	def show

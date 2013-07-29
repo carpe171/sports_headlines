@@ -1,5 +1,4 @@
 class NcaaMensBbHeadline < ActiveRecord::Base
-	default_scope order: 'ncaa_mens_bb_headlines.last_modified DESC'
 
 	serialize :image_url
 

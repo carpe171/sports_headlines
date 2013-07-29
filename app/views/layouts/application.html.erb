@@ -17,6 +17,12 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
+    <% Announcement.current(cookies.signed[:hidden_announcement_ids]).each do |announcement| %>
+      <%= div_for announcement do %>
+        <%= announcement.message %>
+        <%= link_to "hide announcement", hide_announcement_path(announcement), remote: true %>
+      <% end %>
+    <% end %>
     <%= render 'layouts/header' %>
     <%= yield %>
     <%= render 'layouts/footer' %>
