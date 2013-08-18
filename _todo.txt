@@ -1,0 +1,8 @@
+-make mobile friendly
+-show article summary on hover
+-plug in site tracking
+-favicon
+-changing background per controller
+-toggle button logic in helper out of view
+-find out why it takes so long to load index pages
+-espn default icons logos

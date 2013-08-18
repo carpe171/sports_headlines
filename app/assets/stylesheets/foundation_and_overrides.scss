@@ -1235,7 +1235,7 @@ $clearing-carousel-thumb-active-border: 4px solid rgb(255,255,255);
 
 // Background color for the top bar
 
-// $topbar-bg: #111;
+$topbar-bg: #fff;
 
 // Height and margin
 
@@ -1254,17 +1254,17 @@ $clearing-carousel-thumb-active-border: 4px solid rgb(255,255,255);
 // Style the top bar dropdown elements
 
 // $topbar-dropdown-bg: #222;
-// $topbar-dropdown-link-color: #fff;
+$topbar-dropdown-link-color: #222;
 // $topbar-dropdown-link-bg: lighten($topbar-bg, 5%);
 // $topbar-dropdown-toggle-size: 5px;
-// $topbar-dropdown-toggle-color: #fff;
+$topbar-dropdown-toggle-color: #222;
 // $topbar-dropdown-toggle-alpha: 0.5;
 
 // Set the link colors and styles for top-level nav
 
-// $topbar-link-color: #fff;
-// $topbar-link-color-hover: #fff;
-// $topbar-link-color-active: #fff;
+$topbar-link-color: #222;
+$topbar-link-color-hover: #222;
+$topbar-link-color-active: #222;
 // $topbar-link-weight: bold;
 // $topbar-link-font-size: emCalc(13);
 // $topbar-link-hover-lightness: -30%; // Darken by 30%
@@ -1281,8 +1281,8 @@ $clearing-carousel-thumb-active-border: 4px solid rgb(255,255,255);
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: emCalc(13);
 // $topbar-menu-link-weight: bold;
-// $topbar-menu-link-color: #fff;
-// $topbar-menu-icon-color: #fff;
+$topbar-menu-link-color: #222;
+$topbar-menu-icon-color: #222;
 // $topbar-menu-link-color-toggled: #888;
 // $topbar-menu-icon-color-toggled: #888;
 
